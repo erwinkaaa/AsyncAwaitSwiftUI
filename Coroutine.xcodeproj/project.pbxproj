@@ -11,6 +11,11 @@
 		60B9F37D28758AE500A284A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9F37C28758AE500A284A8 /* ContentView.swift */; };
 		60B9F37F28758AE900A284A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B9F37E28758AE900A284A8 /* Assets.xcassets */; };
 		60B9F38228758AE900A284A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B9F38128758AE900A284A8 /* Preview Assets.xcassets */; };
+		60B9F38A28758BC700A284A8 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9F38928758BC700A284A8 /* BaseRepository.swift */; };
+		60B9F38C28758C7100A284A8 /* ResponseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9F38B28758C7100A284A8 /* ResponseWrapper.swift */; };
+		60B9F38E28758C9500A284A8 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9F38D28758C9500A284A8 /* EmptyResponse.swift */; };
+		60B9F3912875913B00A284A8 /* ARepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9F3902875913B00A284A8 /* ARepository.swift */; };
+		60B9F393287591BA00A284A8 /* ARoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9F392287591BA00A284A8 /* ARoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		60B9F37C28758AE500A284A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60B9F37E28758AE900A284A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60B9F38128758AE900A284A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60B9F38928758BC700A284A8 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		60B9F38B28758C7100A284A8 /* ResponseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseWrapper.swift; sourceTree = "<group>"; };
+		60B9F38D28758C9500A284A8 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		60B9F3902875913B00A284A8 /* ARepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARepository.swift; sourceTree = "<group>"; };
+		60B9F392287591BA00A284A8 /* ARoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,7 @@
 		60B9F37928758AE500A284A8 /* Coroutine */ = {
 			isa = PBXGroup;
 			children = (
+				60B9F38828758B8C00A284A8 /* Remote */,
 				60B9F37A28758AE500A284A8 /* CoroutineApp.swift */,
 				60B9F37C28758AE500A284A8 /* ContentView.swift */,
 				60B9F37E28758AE900A284A8 /* Assets.xcassets */,
@@ -65,6 +76,26 @@
 				60B9F38128758AE900A284A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60B9F38828758B8C00A284A8 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				60B9F38F2875912600A284A8 /* Base */,
+				60B9F3902875913B00A284A8 /* ARepository.swift */,
+				60B9F392287591BA00A284A8 /* ARoute.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		60B9F38F2875912600A284A8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				60B9F38928758BC700A284A8 /* BaseRepository.swift */,
+				60B9F38B28758C7100A284A8 /* ResponseWrapper.swift */,
+				60B9F38D28758C9500A284A8 /* EmptyResponse.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B9F38C28758C7100A284A8 /* ResponseWrapper.swift in Sources */,
+				60B9F38A28758BC700A284A8 /* BaseRepository.swift in Sources */,
+				60B9F393287591BA00A284A8 /* ARoute.swift in Sources */,
 				60B9F37D28758AE500A284A8 /* ContentView.swift in Sources */,
+				60B9F38E28758C9500A284A8 /* EmptyResponse.swift in Sources */,
 				60B9F37B28758AE500A284A8 /* CoroutineApp.swift in Sources */,
+				60B9F3912875913B00A284A8 /* ARepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
